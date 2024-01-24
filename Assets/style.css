@@ -31,18 +31,19 @@ body {
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #aaa8a8;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+     background-color: #77dd77;
     color: white;
   }
   
-  .future {
-    background-color: #77dd77;
+  .future { 
+    background-color: teal;
     color: white;
+  
   }
   
   .saveBtn {
