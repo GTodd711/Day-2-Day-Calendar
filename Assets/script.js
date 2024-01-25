@@ -14,7 +14,7 @@ setInterval(updateTime, 1000);
 // function to make the jquerry wait until all html elements are rendered
 $(document).ready(function()  { 
 $(function () {
-    // event listener for when teh save button is pushed
+    // event listener for when the save button is pushed
     $(".saveBtn").on("click", function(){
       // gets user input from text area
       var userInput = $(this).siblings(".description").val();
@@ -35,8 +35,7 @@ $(function () {
       } else {
         $(this).addClass("future");
       }
-    });
-    
+    }); 
     $(".time-block").each(function(){
       var timeBlockId = $(this).attr("id");
       var savedUserInput = localStorage.getItem(timeBlockId);
@@ -45,7 +44,6 @@ $(function () {
         $(this).find(".description").val(savedUserInput);
       }
     })
-
     function hourUpdate(){
       var currentHour = dayjs().hour(); 
       console.log(currentHour)
